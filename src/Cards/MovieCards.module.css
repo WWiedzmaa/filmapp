@@ -1,0 +1,16 @@
+.card{
+    width: 300px;
+    height: 400px;
+    background-color: rgba(68, 80, 105, 0.568);
+}
+.card p{
+    white-space: pre-wrap;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+  
+
+
+

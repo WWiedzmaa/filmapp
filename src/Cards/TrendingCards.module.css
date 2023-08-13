@@ -1,0 +1,8 @@
+.root{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.root div{
+    background-color: rgba(68, 80, 105, 0.568);
+}

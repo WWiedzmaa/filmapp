@@ -1,0 +1,23 @@
+.link {
+  margin-right: 10px;
+  font-size: 30px;
+  display: flex;
+  padding: 5px;
+}
+.list a{
+    color: rgb(37, 43, 72) !important;
+    text-decoration: none;
+}
+.list a:hover{
+    transform: scale(1.08);
+}
+.list {
+  background-color: rgba(68, 80, 105, 0.268);
+  width: 350px;
+  padding: 5px;
+}
+.link img{
+    width:50px;
+    height: 50px;
+    margin-right: 5px;
+}

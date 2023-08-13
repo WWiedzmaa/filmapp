@@ -1,0 +1,15 @@
+.category{
+    color: rgb(37, 43, 72);
+    font-style: oblique;
+    font-size: 60px;
+    padding: 20px;
+    font-family: emoji;
+    font-weight: 500;
+ }
+ .card{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin:20px ; 
+    justify-content: space-around;
+ }

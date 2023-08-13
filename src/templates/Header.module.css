@@ -1,0 +1,75 @@
+.root {
+  height: 80px;
+  background-color: rgb(68, 80, 105);
+  display: flex;
+  position: relative;
+}
+.logo {
+  font-size: 60px;
+  color: rgb(37, 43, 72);
+  margin-left: 30px;
+  margin-bottom: 5px;
+}
+.logo svg {
+  font-size: 50px;
+}
+.links {
+  display: flex;
+  font-size: 25px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: 50px;
+}
+.links a {
+  margin-right: 20px;
+  color: rgb(37, 43, 72);
+  text-decoration: none;
+  font-weight: 600;
+}
+.links :hover {
+  transform: scale(1.2);
+}
+.img {
+  height: 150px;
+  width: 850px;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+.search {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  background-color: rgba(68, 80, 105, 0.568);
+}
+.lable svg {
+  font-size: 25px;
+  color: rgb(37, 43, 72);
+}
+.bnt {
+  position: absolute;
+  top: 24%;
+  width: 430px;
+}
+.bnt div {
+  border-radius: 20px;
+}
+
+.lable {
+  display: "inline-flex";
+  align-items: "center";
+  border: 1px rgba(0, 0, 0, 0) !important ;
+  color: rgb(37, 43, 72);
+  font-size: 25px;
+}
+.notchedOutline {
+  border-color: transparent !important;
+}
+.notchedOutline:active {
+  text-decoration: none;
+}
+
+.listAbsolut {
+  position: absolute;
+  right: 18%;
+  top: 70px;
+}

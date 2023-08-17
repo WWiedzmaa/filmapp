@@ -1,0 +1,98 @@
+.fivePointedStar {
+  --star-color: rgb(204, 238, 13);
+  margin: 1em auto;
+  font-size: 10em;
+  position: relative;
+  display: block;
+  width: 0px;
+  height: 0px;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid var(--star-color);
+  border-left: 1em solid transparent;
+  transform: rotate(35deg);
+  transform: scale(0.25);
+}
+.fivePointedStar:before {
+  border-bottom: 0.8em solid var(--star-color);
+  border-left: 0.3em solid transparent;
+  border-right: 0.3em solid transparent;
+  position: absolute;
+  height: 0;
+  width: 0;
+  top: -0.45em;
+  left: -0.65em;
+  display: block;
+  content: "";
+  transform: rotate(-35deg);
+}
+.fivePointedStar:after {
+  position: absolute;
+  display: block;
+  top: 0.03em;
+  left: -1.05em;
+  width: 0;
+  height: 0;
+  border-right: 1em solid transparent;
+  border-bottom: 0.7em solid var(--star-color);
+  border-left: 1em solid transparent;
+  transform: rotate(-70deg);
+  content: "";
+  z-index: 998;
+}
+.fivePointedStar span {
+  z-index: 999;
+  position: absolute;
+  font-size: 80px;
+  left: -60px;
+  font-weight: bold;
+}
+.img {
+  position: relative;
+}
+.img img {
+  height: 400px;
+  width: 300;
+  border-radius: 5px;
+}
+.star {
+  position: absolute;
+  top: -170px;
+  left: -110px;
+  color: rgb(37, 43, 72);
+}
+.root {
+  color: rgb(37, 43, 72);
+  font-style: oblique;
+  font-size: 60px;
+  padding: 20px;
+  font-family: emoji;
+  font-weight: 500;
+}
+.main {
+  display: flex;
+  margin-left: 20px;
+}
+.text {
+  width: 500px;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.know {
+  font-size: 25px;
+  color: rgb(37, 43, 72);
+  font-style: oblique;
+  font-family: emoji;
+  text-align: justify;
+}
+.know span {
+  font-size: 30px;
+  color: rgb(37, 43, 72);
+  font-style: oblique;
+  font-family: emoji;
+  font-weight: 600;
+}
+.text div {
+  margin: 15px 0;
+}

@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import styles from "./MovieCards.module.css"
+import { Link } from "react-router-dom";
 
 const MovieCards = ({ movie }) => {
   const [detals, setDetals] = useState(null);
@@ -18,9 +19,11 @@ const MovieCards = ({ movie }) => {
     }
     movieDetals();
   }, []);
-  console.log(detals);
   return (
-    <div>
+    <Link to={`/search/${
+      movie.id + "-" + (movie.name)?.replaceAll(" ", "-")
+    }`} 
+    state={{ obj: movie, type: "movie" }} className={styles.root}>
       <Card sx={{ maxWidth: 345 }} className={styles.card}>
         <CardActionArea>
           <CardMedia
@@ -39,7 +42,7 @@ const MovieCards = ({ movie }) => {
           </CardContent>
         </CardActionArea>
       </Card>
-    </div>
+    </Link>
   );
 };
 

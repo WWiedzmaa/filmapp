@@ -8,6 +8,7 @@ import {
   Typography,
 } from "@mui/material";
 import styles from "./SerialCards.module.css"
+import { Link } from "react-router-dom";
 
 const SerialCards = ({ serial }) => {
   const [detals, setDetals] = useState(null);
@@ -21,7 +22,10 @@ const SerialCards = ({ serial }) => {
   }, []);
 
   return (
-    <div>
+    <Link to={`/search/${
+      serial.id + "-" + (serial.title)?.replaceAll(" ", "-")
+    }`} 
+    state={{ obj: serial, type: "tv"}} className={styles.root}>
       <Card sx={{ maxWidth: 345 }} className={styles.card}>
         <CardActionArea>
           <CardMedia
@@ -43,7 +47,7 @@ const SerialCards = ({ serial }) => {
           </CardContent>
         </CardActionArea>
       </Card>
-    </div>
+    </Link>
   );
 };
 

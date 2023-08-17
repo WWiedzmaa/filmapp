@@ -14,10 +14,14 @@
   }
   .know{
     color: rgb(37, 43, 72);
-    font-size: 15px bold;
+    font-size: 15px;
     font-weight: 600;
   }
   .play{
       color: rgb(37, 43, 72);
       font-size: 13px;
+  }
+  .root{
+    text-decoration: none;
+    direction: none;
   }

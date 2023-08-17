@@ -14,7 +14,6 @@ const Header = (movie) => {
   const myRef = useRef();
 
   const handleClickOutside = (e) => {
-    console.log(e);
     if (!myRef.current?.contains(e.target)) {
       setIsVisible(false);
     }
@@ -56,15 +55,16 @@ const Header = (movie) => {
           <Link to={"/persons"}> Person </Link>
         </div>
         {isVisible && (
-            <div className={styles.listAbsolut}>
-              <SearchList clean={clean} value={data} />
-            </div>
-          )}
+          <div className={styles.listAbsolut}>
+            <SearchList clean={clean} value={data} />
+          </div>
+        )}
       </div>
       <div className={styles.search}>
         <img
           className={styles.img}
-          src="https://img.freepik.com/darmowe-zdjecie/pusta-sala-kinowa-z-krzeslami_651396-2891.jpg" />
+          src="https://img.freepik.com/darmowe-zdjecie/pusta-sala-kinowa-z-krzeslami_651396-2891.jpg"
+        />
         <div className={styles.bnt} ref={myRef}>
           <TextField
             label={
@@ -76,13 +76,13 @@ const Header = (movie) => {
             onChange={(e) => setQuery(e.target.value)}
             value={query}
             size="small"
-            onClick={() => setIsVisible(true)}  
+            onClick={() => setIsVisible(true)}
             fullWidth
             InputProps={{
-                classes: {
-                  notchedOutline: styles.notchedOutline
-                }
-              }}
+              classes: {
+                notchedOutline: styles.notchedOutline,
+              },
+            }}
           />
         </div>
       </div>

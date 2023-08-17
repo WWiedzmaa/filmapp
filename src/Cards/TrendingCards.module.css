@@ -1,8 +1,10 @@
-.root{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.root {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  direction: none;
 }
-.root div{
-    background-color: rgba(68, 80, 105, 0.568);
+.root div {
+  background-color: rgba(68, 80, 105, 0.568);
 }

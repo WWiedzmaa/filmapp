@@ -46,7 +46,9 @@ const Header = (movie) => {
     <div>
       <div className={styles.root}>
         <div className={styles.logo}>
-          <OndemandVideoIcon /> Films{" "}
+          <Link to={"/"}>
+            <OndemandVideoIcon /> Films
+          </Link>
         </div>
         <div className={styles.links}>
           <Link to={"/"}> Home Page</Link>

@@ -6,6 +6,7 @@ import { Movie } from "./pages/Movie";
 import { Persons } from "./pages/Person";
 import { HomePage } from "./pages/HomePage";
 import { SearchResoult } from "./templates/SearchResoults";
+import Footer from "./templates/Footer";
 
 
 function App() {
@@ -23,7 +24,7 @@ function App() {
             <Route path="/search/:id" element={<SearchResoult/>} />
           </Routes>
         </div>
-        {/* <Footer /> */}
+        <Footer />
       </BrowserRouter>
     </div>
   );

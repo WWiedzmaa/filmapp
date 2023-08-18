@@ -13,5 +13,7 @@
 }
 .root {
   text-decoration: none;
-  direction: none;
+}
+.root div{
+  background-color: rgba(68, 80, 105)
 }

@@ -1,0 +1,26 @@
+.root {
+    height: 90px;
+    background-color: rgb(68, 80, 105);
+    padding: 10px;
+    position: absolute;
+    width: 100%;
+  }
+  .logo {
+    font-size: 30px;
+    color: rgb(37, 43, 72);
+    margin-left: 30px;
+    margin-bottom: 5px;
+  }
+  .logo a{
+    text-decoration: none;
+    color: rgb(37, 43, 72);
+  }
+  .logo svg {
+    font-size: 50px;
+  }
+  .author{
+    font-size: 10px;
+  }
+  .divider{
+    margin-bottom: 10px;
+  }

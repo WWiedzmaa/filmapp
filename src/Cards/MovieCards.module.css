@@ -1,7 +1,7 @@
 .card {
   width: 300px;
   height: 400px;
-  background-color: rgba(68, 80, 105, 0.568);
+  background-color: rgba(68, 80, 105);
 }
 .card p {
   white-space: pre-wrap;
@@ -13,5 +13,7 @@
 }
 .root {
   text-decoration: none;
-  direction: none;
+}
+.root div{
+  background-color: rgba(68, 80, 105)
 }

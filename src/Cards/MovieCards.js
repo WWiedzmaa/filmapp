@@ -12,11 +12,13 @@ import { Link } from "react-router-dom";
 
 const MovieCards = ({ movie }) => {
   const [detals, setDetals] = useState(null);
+
   useEffect(() => {
     async function movieDetals() {
       const det = await ApiUtil.getMovieDetals(movie.id);
       setDetals(det);
     }
+    
     movieDetals();
   }, []);
   return (

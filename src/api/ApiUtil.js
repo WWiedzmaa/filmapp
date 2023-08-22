@@ -2,14 +2,14 @@ import axios from "axios";
 
 class ApiUtil {
   static baseUrl = "https://api.themoviedb.org/3/";
-  static apiKey = "5219cb6186dc8cdfa863dcdc035f17f8";
+  static apiKey = process.env.REACT_APP_API_KEY;
   static async getPopoularSerials() {
     try {
       const response = await axios.get(`${this.baseUrl}tv/popular`, {
         params: {
             api_key: this.apiKey,
         },
-      });
+      }); 
       return response.data;
     } catch (error) {}
   }
@@ -156,6 +156,26 @@ class ApiUtil {
       return response.data;
     } catch (error) {}
   }
+  static async getVideo(id){
+    try {
+      const response = await axios.get(`${this.baseUrl}/movie/${id}/videos`, {
+        params: {
+            api_key: this.apiKey,
+        },
+      });
+      return response.data;
+    } catch (error) {}
+}
+static async getSerialVideo(id){
+  try {
+    const response = await axios.get(`${this.baseUrl}/tv/${id}/videos`, {
+      params: {
+          api_key: this.apiKey,
+      },
+    });
+    return response.data;
+  } catch (error) {}
+}
 }
 
 export default ApiUtil;

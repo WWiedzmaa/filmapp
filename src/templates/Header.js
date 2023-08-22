@@ -31,7 +31,7 @@ const Header = (movie) => {
     async function search() {
       const data = await ApiUtil.getSearch(query);
       if (query !== "") {
-        setData(data.results);
+        setData(data?.results);
       }
     }
     search();

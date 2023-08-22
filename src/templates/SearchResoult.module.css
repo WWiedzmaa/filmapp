@@ -51,7 +51,6 @@
 }
 .img img {
   height: 400px;
-  width: 300;
   border-radius: 5px;
 }
 .star {
@@ -73,7 +72,7 @@
   margin-left: 20px;
 }
 .text {
-  width: 500px;
+  width: 1000px;
   margin-left: 20px;
   margin-bottom: 15px;
   padding: 10px;
@@ -85,6 +84,7 @@
   font-style: oblique;
   font-family: emoji;
   text-align: justify;
+  margin-right: 5px !important;
 }
 .know span {
   font-size: 30px;
@@ -94,5 +94,19 @@
   font-weight: 600;
 }
 .text div {
-  margin: 15px 0;
+  margin: 10px 0;
+}
+.trailer{
+     display: flex;
+     margin-top: -10px !important;
+}
+.trailer a{
+  text-decoration: none;
+}
+.knowTrailer{
+  font-size: 25px;
+  color: rgb(37, 43, 72);
+  font-style: oblique;
+  font-family: emoji;
+  text-align: justify;
 }

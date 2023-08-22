@@ -18,6 +18,7 @@ export default function SearchList({ value, clean }) {
       }}
     >
       {value.map((list) => {
+        console.log(list)
         return (
           <ListItem className={styles.list} key={list.id}>
             <Link
@@ -25,7 +26,7 @@ export default function SearchList({ value, clean }) {
               to={`/search/${
                 list.id + "-" + (list.name ?? list.title)?.replaceAll(" ", "-")
               }`}
-              state={{ obj: list }}
+              state={{ obj: list, type: list.media_type }}
               onClick={clean}
             >
               <ListItemAvatar>
